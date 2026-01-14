@@ -127,7 +127,7 @@ class DatabaseSetup
             elseif ($ipAddress === 'd')
             {
                 $this->climate->lightMagenta("Using egress IPs of Sonar..");
-                $ipAddresses = ['20.221.112.37', '20.221.114.13', '52.158.209.86'];
+                $ipAddresses = ['20.221.112.37', '20.221.114.13', '52.158.209.86', '20.15.246.160/28', '20.84.143.0/28'];
                 break;
             }
             elseif (filter_var($ipAddress, FILTER_VALIDATE_IP) === false)
